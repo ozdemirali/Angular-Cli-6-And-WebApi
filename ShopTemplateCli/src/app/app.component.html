@@ -1,0 +1,115 @@
+
+<div id="wrapper">
+  <!--Page-->
+  <div class="page shadow">
+      <!--Header-->
+      <div id="header">
+          <div class="primary-section">
+              <div class="logo"> <a href="http://www.webgranth.com"><img src="src/images/logo.png" alt="logo" title="webgranth" /></a></div>
+              <div class="header-aside">
+                  <span>+90 120 4735100</span>
+              </div>
+          </div>
+          <div class="nav-section">
+              <ul class="navigation">
+                  <li><a routerLink="/">Anasayfa </a></li>
+                  <li><a routerLink="/create">Yeni Ürün Ekle </a></li>
+              </ul>
+              <ul class="search-box">
+                  <li>
+                      <input type="text" value="Ara..." id="user_search" autocomplete="off" onkeypress="submitenter_search(event);" onblur="if (this.value=='')this.value='search';" onfocus="if (this.value=='search')this.value=''" />
+                  </li>
+                  <li class="sms-last">
+                      <input type="submit" value="" class="submit" />
+                      <a href="#"> search</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <!--Header-->
+      <!--Content-->
+      <div id="content">
+          <div class="sidebar">
+              <div class="latest-product ">
+                  <h2>Kategoriler</h2>
+                  <ul class="info">
+                      <li><a href="#">Cep Telefonları</a></li>
+                      <li><a href="#">Dizüstü Bilgisayarlar</a></li>
+                      <li><a href="#">Masaüstü Bilgisayarlar</a></li>
+                      <li><a href="#">Kameralar</a></li>
+                      <li><a href="#">Fotoğraf Makineleri</a></li>
+                      <li><a href="#">Yazıcılar</a></li>
+                  </ul>
+              </div>
+
+          </div>
+          <div class="content-right">
+              <div class="banner">
+                  <div class="slides">
+                      <div class="slides_container">
+                          <div class="imgeslider">
+                              <img src="src/images/lapy.jpg" alt="lapy" title="product" />
+                              <div class="banner-text">
+                                  <h1>Lorem Ipsum</h1>
+                                  <span>Lorem Ipsum is simply</span>
+                                  <p>Lorem Ipsum is simply dummy text of the printing</p>
+                                  <a href="#"> Click Here <span></span></a>
+                              </div>
+                          </div>
+                          <div class="imgeslider">
+                              <img src="src/images/lapy.jpg" alt="lapy" title="product" />
+                              <div class="banner-text">
+                                  <h1>Lorem Ipsum</h1>
+                                  <span>Lorem Ipsum is simply</span>
+                                  <p>Lorem Ipsum is simply dummy text of the printing</p>
+                                  <a href="#"> Click Here <span></span></a>
+                              </div>
+                          </div>
+                          <div class="imgeslider">
+                              <img src="src/images/lapy.jpg" alt="lapy" title="product" />
+                              <div class="banner-text">
+                                  <h1>Lorem Ipsum</h1>
+                                  <span>Lorem Ipsum is simply</span>
+                                  <p>Lorem Ipsum is simply dummy text of the printing</p>
+                                  <a href="#"> Click Here <span></span></a>
+                              </div>
+                          </div>
+                          <div class="imgeslider">
+                              <img src="src/images/lapy.jpg" alt="lapy" title="product" />
+                              <div class="banner-text">
+                                  <h1>Lorem Ipsum</h1>
+                                  <span>Lorem Ipsum is simply</span>
+                                  <p>Lorem Ipsum is simply dummy text of the printing</p>
+                                  <a href="#"> Click Here <span></span></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Content-->
+      <!--Content-->
+      <div id="content">
+          <div class="content-row">
+                <router-outlet></router-outlet>
+          </div>
+      </div>
+      <!-- Content-->
+      <!--Footer-->
+      <div id="footer">
+          <div class="page">
+              <div class="footer-bottom">
+                  <div class="copyright">
+                      <ul>
+                          <li>&copy; 2018 </li>
+                          <li><a href="#" class="select">WTP</a> Uygulama Sınavı</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--Footer-->
+  </div>
+</div>
+

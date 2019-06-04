@@ -1,0 +1,59 @@
+<div class="bosluk">
+      <div class="form-group">
+          <label for="ad">Ad</label>
+          <input  type="text" required  #ad="ngModel"  class="form-control" [(ngModel)]="newProduct.Ad" id="ad" aria-describedby="emailHelp" placeholder="Ürün Adı">
+          <div *ngIf="ad.invalid" class="alert alert-danger">
+              Ad girmek zorunludur.
+           </div>
+        </div>
+        <div class="form-group">
+          <label for="Fiyat">Fiyat</label>
+          <input type="number" class="form-control" required maxlength="1" #fiyat="ngModel" [(ngModel)]="newProduct.Fiyat"  aria-describedby="emailHelp" placeholder="Ürün Fiyatı">
+          <div *ngIf="fiyat.invalid" class="alert alert-danger">
+              Fiyat girmek zorunludur.
+           </div> 
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlFile1">Resim</label>
+          <input type="file" [(ngModel)]="clearFile"
+                class="form-control-file" 
+                (change)="onFileSelected($event)">
+                <input type="text"  required   minlength="1"  #resimYolu="ngModel" [(ngModel)]="newProduct.ResimYolu" hidden  >
+                <div *ngIf="resimYolu.invalid" class="alert alert-danger">
+                     Resim dosyası seçmek zorunludur.
+                  </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Yeni</label>
+          <select class="form-control" [(ngModel)]="newProduct.Yeni" id="exampleFormControlSelect1">
+            <option [ngValue]="0">False</option>
+            <option [ngValue]="1">True</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Marka</label>
+          <select class="form-control" [(ngModel)]="newProduct.MarkaId"  id="exampleFormControlSelect1">
+            <option
+              *ngFor="let item of marks"
+              [ngValue]="item.Id"
+            >{{item.Ad}}
+          </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Kategori</label>
+          <select class="form-control" [(ngModel)]="newProduct.KategoriId" id="exampleFormControlSelect1">
+            <option
+               *ngFor="let item of kategories"
+                [ngValue]="item.Id"
+            >{{item.Ad}}
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button type="reset" class="btn  btn-secondary" (click)=cleanForm()>Temizle</button>
+          <button type="submit" class="btn btn-primary" (click)="saveProduct()" [disabled]="fiyat.invalid || resimYolu.invalid || ad.invalid">Kaydet</button>
+      </div>
+   
+ 
+</div>

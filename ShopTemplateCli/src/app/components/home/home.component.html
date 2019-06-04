@@ -1,0 +1,24 @@
+<div *ngFor="let product of products; let i=index">
+    <div class="product-info">
+        <img src="http://localhost:52378/Image/{{product.ResimYolu}}" alt="lapy" title="product" class="lapy" />
+        <div *ngIf="product.Yeni">
+            <div class="rotatebg">&nbsp;</div>
+            <div class="newrotate"></div>
+        </div>
+       
+        <h2>{{product.Ad}}</h2>
+        <div class="add"><span>{{product.Fiyat}} TL</span><a href="#" routerLink="detail/{{product.Id}}">{{product.MarkaAd}}</a></div>
+        <div class="add-to-list">
+            <ul>
+                <li><a href="#">{{product.KategoriAd}}</a></li>
+            </ul>
+        </div>
+    </div>
+    <div *ngIf="(i+1)%4==0"  class="cl"></div>
+</div>
+
+            
+             
+              
+             
+             

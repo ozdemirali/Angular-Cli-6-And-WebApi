@@ -1,0 +1,65 @@
+<div class="bosluk">
+  <div class="form-group" hidden>
+    <label for="exampleInputEmail1">Id</label>
+    <input type="number"   class="form-control" [(ngModel)]="product.Id"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ürün Id">
+    
+  </div>
+  <div class="form-group">
+    <label for="ad">Ad</label>
+    <input type="text"  required  #ad="ngModel" class="form-control"  [(ngModel)]="product.Ad"  id="ad" aria-describedby="emailHelp" placeholder="Ürün Adı">
+    <div *ngIf="ad.invalid" class="alert alert-danger">
+      Ad girmek zorunludur.
+   </div>
+  
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Fiyat</label>
+    <input type="number"  required #fiyat="ngModel" class="form-control"  [(ngModel)]="product.Fiyat" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ürün Adı">
+    <div *ngIf="fiyat.invalid" class="alert alert-danger">
+      Fiyat girmek zorunludur.
+   </div> 
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Resim</label>
+    <input type="file"
+          [(ngModel)]="selected"  
+          class="form-control-file" 
+          (change)="onFileSelected($event)" 
+          id="exampleFormControlFile1">
+          <input type="text"   [(ngModel)]="product.ResimYolu"  disabled >
+
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Yeni</label>
+    <select class="form-control" [(ngModel)]="product.Yeni"  id="exampleFormControlSelect1">
+      <option [ngValue]="false">False</option>
+      <option [ngValue]="true">True</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Marka</label>
+    <select class="form-control" [(ngModel)]="product.MarkaId"   id="exampleFormControlSelect1">
+      <option
+        *ngFor="let item of marks"
+        [ngValue]="item.Id"
+      >{{item.Ad}}
+    </option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Kategori</label>
+    <select class="form-control" [(ngModel)]="product.KategoriId"  id="exampleFormControlSelect1">
+      <option
+         *ngFor="let item of kategories"
+          [ngValue]="item.Id"
+      >{{item.Ad}}
+
+      </option>
+      
+    </select>
+  </div>
+  <div class="form-group">
+    <button type="reset" class="btn  btn-secondary" (click)=deleteProduct() >Sil</button>
+    <button type="submit" class="btn btn-primary" (click)="updateProduct()" [disabled]="ad.invalid || fiyat.invalid" >Güncelle</button>
+</div>
+</div>

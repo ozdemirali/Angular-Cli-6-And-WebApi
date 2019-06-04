@@ -1,0 +1,11 @@
+input {
+    width: inherit !important;
+}
+
+button[type="reset"]{
+     margin-right:2px;
+}
+
+.bosluk{
+    padding:5px;
+}
