@@ -21,4 +21,3 @@ D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateDataLayer\obj\Debug
 D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateDataLayer\obj\Debug\ShopTemplateDataLayer.csproj.CopyComplete
 D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateDataLayer\obj\Debug\ShopTemplateDataLayer.dll
 D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateDataLayer\obj\Debug\ShopTemplateDataLayer.pdb
-D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateDataLayer\obj\Debug\ShopTemplateDataLayer.csprojResolveAssemblyReference.cache

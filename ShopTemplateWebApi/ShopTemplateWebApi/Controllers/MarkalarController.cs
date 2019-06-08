@@ -16,6 +16,7 @@ namespace ShopTemplateWebApi.Controllers
     {
         private ShopTemplateDal _service = new ShopTemplateDal();
 
+       
         [ResponseType(typeof(List<ViewMarka>))]
         public IHttpActionResult Get()
         {

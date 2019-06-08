@@ -147,3 +147,16 @@ D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\obj\Debug\Sh
 D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\obj\Debug\ShopTemplateWebApi.csproj.CopyComplete
 D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\obj\Debug\ShopTemplateWebApi.dll
 D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\obj\Debug\ShopTemplateWebApi.pdb
+D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\bin\Microsoft.Web.Infrastructure.dll
+D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\bin\System.Web.Helpers.dll
+D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\bin\System.Web.Mvc.dll
+D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\bin\System.Web.Razor.dll
+D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\bin\System.Web.WebPages.Deployment.dll
+D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\bin\System.Web.WebPages.dll
+D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\bin\System.Web.WebPages.Razor.dll
+D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\bin\System.Web.Helpers.xml
+D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\bin\System.Web.Mvc.xml
+D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\bin\System.Web.Razor.xml
+D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\bin\System.Web.WebPages.xml
+D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\bin\System.Web.WebPages.Deployment.xml
+D:\Dersler\WTP\ASP.NET\WebApi\ShopTemplateWebApi\ShopTemplateWebApi\bin\System.Web.WebPages.Razor.xml
